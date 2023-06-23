@@ -12,5 +12,6 @@ Plug 'tpope/vim-surround'
 Plug 'StanAngeloff/php.vim'
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'stephpy/vim-php-cs-fixer'
+Plug 'tpope/vim-sensible'
 
 call plug#end()
