@@ -14,6 +14,10 @@ set number
 set noerrorbells visualbell t_vb=
 set autowriteall
 set complete=.,w,b,u
+set tabstop=8
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 
 
@@ -78,6 +82,7 @@ nmap <Leader>f :tag<space>
 
 
 
+
 "--------------Plugins--------------"
 "/
 "/ CtrlP
@@ -108,6 +113,20 @@ let g:php_cs_fixer_level = 'psr2'
 
 nnoremap <silent><leader>pd :call PhpCsFixerFixDirectory()<CR>
 nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
+
+"/
+"/ pdv
+"/
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+
+nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
+
+"/
+"/ Ultisnips
+"/
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 
 
